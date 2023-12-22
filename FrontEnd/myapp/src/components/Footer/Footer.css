@@ -1,0 +1,50 @@
+.footer-con {
+    background-color: #333;
+    color:burlywood;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-head {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .icon-con {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .text-center {
+    text-align: center;
+    margin: 5px 0;
+  }
+  
+  .line {
+    border: 1px solid #555;
+    margin: 20px 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  .vr {
+    width: 1px;
+    height: 20px;
+    background-color: #555;
+  }
+  .lastfooter{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }

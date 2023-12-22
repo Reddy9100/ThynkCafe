@@ -1,0 +1,29 @@
+.coffeecollection{
+    min-height: 100vh;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.banner-menu{
+    height: 40vh;
+    width: 100%;
+    background-size: cover;
+}
+.loader{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.loader-image{
+    height: 200px;
+    background-size: cover;
+}
+.head-coffee{
+    text-align: center;
+    padding: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: underline;
+}

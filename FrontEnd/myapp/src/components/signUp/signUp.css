@@ -1,0 +1,109 @@
+.signUp-image{
+    height: 400px;
+    width: 400px;
+    background-size: cover;
+    border-radius: 30px;
+}
+.signup-con{
+    height: 100vh;
+    background-image: linear-gradient(to right,blue,white 50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.inner-signup{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+.form-con{
+    background-color: transparent;
+    backdrop-filter: blur(30px);
+    border: 3px solid greenyellow;
+    padding: 20px;
+    width: 400px;
+    border-radius: 7px;
+}
+.signup-head{
+    text-align: center;
+    color: blue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.text-feild:focus{
+    background-color: black;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.password-feild:focus{
+    position: relative;
+    background-color: black;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.text-feild::placeholder{
+    color: rgb(78, 236, 144);
+}
+.password-feild::placeholder{
+    color: rgb(120, 236, 78);
+}
+.email-feild::placeholder{
+    color: rgb(128, 236, 78);
+}
+.eye-icon{
+    font-size: 15px;
+    color:rgb(255,0,255);
+    position: absolute;
+    top: 65%;
+    transform: translateX(320px);
+}
+.email-feild:focus{
+    background-color: black;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.para-signup{
+    color: brown;
+    font-family: Arial, Helvetica, sans-serif
+}
+.span{
+    color: red;
+    animation: pulse 1.5s infinite;
+    border: 1px solid red;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+@keyframes pulse{
+    0%{
+        transform: scale(1);
+        color: red;
+    }
+    100%{
+        transform: scale(1.5);
+        color:blue;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .signup-con{
+    height: 100vh;
+    background-image: linear-gradient(to bottom, blue, transparent 50%);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .signUp-image{
+        display: none;
+    }
+    .eye-icon{
+        transform: translateX(220px);
+        color: red;
+    }
+    html,body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+}

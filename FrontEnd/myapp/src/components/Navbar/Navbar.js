@@ -28,9 +28,7 @@ const Navbar = () => {
               alt='navbar-logo'
             />
           </Link>
-          <h2 className='text-white head-nav'>ThynkCafe</h2>
-
-          {/* Add a conditional rendering for the mobile menu */}
+          <h2 className='head-nav'>ThynkCafe</h2>
           <ul className={`ul-con ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
             <Link to='/'>
               <li className='link-ul link-for-mobile' onClick={showToggle}>

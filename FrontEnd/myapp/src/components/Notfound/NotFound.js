@@ -1,12 +1,21 @@
 import React from 'react'
 import "./NotfFound.css"
+import { useNavigate } from 'react-router-dom'
 const NotFound = () => {
+  const Navigate = useNavigate()
+  const tohome = () => {
+    Navigate("/")
+  }
+
   return (
-    <div className='notfound-con'>
-        <div>
-            <img src='https://media1.giphy.com/media/hL1Rjt6qvI3ej0bXoD/giphy.gif?cid=ecf05e47eglklnposnyyv96wq62azvnco9uusgwnbh2nzeol&ep=v1_gifs_search&rid=giphy.gif&ct=g' alt='notfoundimage' className=''/>
+    <>
+        <div className='notfound-container'>
+          <h1 className='text-center'>404</h1>
+            <img src='https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif' alt='notfoundimage' className=''/>
+            <button className='btn-not' onClick={tohome}>Home</button>
         </div>
-    </div>
+        
+        </>
   )
 }
 

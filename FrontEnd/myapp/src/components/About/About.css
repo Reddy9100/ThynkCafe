@@ -1,6 +1,9 @@
 .about-con{
     min-height: 100vh;
 }
+body{
+    font-family: Roboto slab,serif;
+}
 .baaner{
     height: 70vh;
     background-size: cover;

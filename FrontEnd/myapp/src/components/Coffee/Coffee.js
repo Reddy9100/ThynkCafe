@@ -9,6 +9,9 @@ import Cookies from 'js-cookie';
 import { useNavigate } from 'react-router-dom';
 
 const Coffee = () => {
+
+  const [filter,setFilter] = useState("")
+  const [filteredData,setFilterdData] = useState([])
   const navigate = useNavigate()
   const jwtToken = Cookies.get("jwt_token")
   useEffect(() => {
@@ -42,6 +45,15 @@ const Coffee = () => {
     fetchData();
   }, []);
 
+  const filterSearch = (event) =>{
+    const item = event.target.value
+    setFilter(item)
+    const filterdList = coffeeData.filter((coffee)=>{
+      return coffee.name.toLowerCase().includes(item.toLowerCase())
+    })
+    setFilterdData(filterdList)
+  }
+
   return (
     <>
       {loading ? (
@@ -53,8 +65,12 @@ const Coffee = () => {
         <>
           <Navbar />
           <img src='https://www.trycuppacoffee.com/wp-content/uploads/2012/12/MENUHEADER.jpg' className='banner-menu' alt='imge-coffee-banner'/>
+          <div className='filter'>
+          <input type='text' className="filtercoffee" placeholder='search Coffee' onChange={filterSearch} value={filter}/>
+          </div>
           <div className='coffeecollection pt-5 pb-5'>
-            {coffeeData.map((coffee, index) => (
+            {filteredData.length>=1 &&
+            filteredData.map((coffee, index) => (
               <CoffeeItem key={index} coffee={coffee} />
             ))}
           </div>

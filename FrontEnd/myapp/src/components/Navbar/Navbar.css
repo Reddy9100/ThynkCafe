@@ -7,7 +7,7 @@
 }
 .navbar{
     height:10vh;
-    background-color:saddlebrown;
+    background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,17 +20,23 @@
     justify-content: space-between;
     align-items: center;
 }
-.link-ul{
+.link-for-mobile{
     font-size: 20px;
     margin-top: 10px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     transition: transform 0.3s ease-in;
     color: white;
+    animation: change-nav-color;
 }
-
-.link-ul:hover{
-    transform: scale(1.3);
-    color:aqua;
+@keyframes change-nav-color{
+    from{
+        transform: scale(1);
+        color: white;
+    }
+    to{
+        transform: scale(1.45);
+        color: aqua;
+    }
 }
 .bars{
     display: none;
@@ -49,20 +55,12 @@
 }
 .head-nav{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: 150px;
-    color: brown;
-    animation: pulseheaadname 2s infinite;
-    text-shadow: 2px 2px 2px  whitesmoke;
-}
-@keyframes pulseheaadname {
-    from{
-       letter-spacing: -5px;
-       color: red;
-    }
-    to{
-        letter-spacing: 0px;
-        color: burlywood;
-    }
+    margin-left: 250px;
+    font-size: 40px;
+    color:transparent;
+    background-image: url("https://media1.giphy.com/media/rsQu1BC0BF8wo/giphy.gif?cid=ecf05e4714pi9lhdo8xbg3lig5ps2m12m31xyv860s0z7tjk&ep=v1_gifs_related&rid=giphy.gif&ct=g");
+    background-size: cover;
+    background-clip:text;
 }
 .ul-connect{
     display: none;
@@ -72,10 +70,8 @@
 }
 .link-ul{
  display: block;
+ text-decoration: none;
 }
-ul-connect {
-    display: none;
-  }
   
   .ul-con.mobile-menu-open {
     display: flex;
@@ -95,13 +91,14 @@ ul-connect {
     font-size: 20px;
     margin-top: 10px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    transition: transform 0.3s ease-in;
-    color: black; /* Change the color for better visibility on bisque background */
+    transition: transform 0.6s ease-in;
+    color: black;
+    text-decoration: none;
   }
   
   .link-ul.link-for-mobile:hover {
-    transform: scale(1.3);
-    color: aqua;
+    transform: scale(1.1);
+    color:burlywood;
   }
   
   .bars {

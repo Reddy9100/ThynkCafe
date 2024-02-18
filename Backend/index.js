@@ -24,7 +24,6 @@ async function connectMongo() {
 
 connectMongo();
 
-// Model for signup
 const userSchema = new mongoose.Schema({
     name: String,
     mail: String,
@@ -89,7 +88,7 @@ app.post("/login", async (req, res) => {
             return res.status(400).json({ message: "Enter All Fields Data" });
         }
 
-        const findUser = await User.findOne({ mail: emailLogin }); // Assuming 'mail' is the field name for email
+        const findUser = await User.findOne({ mail: emailLogin }); 
         if (!findUser) {
             return res.status(404).json({ message: "User Is Not Registered" });
         }

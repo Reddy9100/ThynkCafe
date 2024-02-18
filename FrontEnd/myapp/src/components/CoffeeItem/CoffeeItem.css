@@ -82,9 +82,15 @@
     filter: drop-shadow(3px 3px 3px white);
     transition: all 0.4s ease-in;
 }
-
 .liked-coffe:hover{
     transform: scale(1.05);
+}
+.order-image{
+    height: 250px;
+    width: 100%;
+    border-radius: 30px;
+    background-size: cover;
+    position:relative;
 }
 
 @media screen and (max-width : 768px) {

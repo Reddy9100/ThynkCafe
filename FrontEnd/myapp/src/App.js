@@ -5,8 +5,6 @@ import SignUp from './components/signUp/signUp';
 import Coffee from './components/Coffee/Coffee';
 import About from './components/About/About';
 import NotFound from './components/Notfound/NotFound';
-
-
 const App = () => {
   return (
     <BrowserRouter>

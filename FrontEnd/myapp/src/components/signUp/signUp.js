@@ -65,6 +65,7 @@ const SignUp = () => {
                     <div className='inner-signup'>
                         <img src='https://img.freepik.com/free-vector/sign-up-concept-illustration_114360-7965.jpg?w=740&t=st=1703002961~exp=1703003561~hmac=40ed89ec2e915a4b47c3271956427204af414c9561f86d2aebd2132ce631e0ad' className='signUp-image' alt='signupimage' />
                         <form className='form-con' onSubmit={SignUpForm}>
+                            <h1 className='thynk-head'>ThynkCafe</h1>
                             <h1 className='signup-head'>SignUp</h1>
                             <label htmlFor="text"><b>Name</b></label>
                             <input type='text' className='text-feild form-control mt-2' id='text' placeholder='Enter Your Name' onChange={controlledInputSignUpName} value={name} />

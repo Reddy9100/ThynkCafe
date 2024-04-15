@@ -1,0 +1,18 @@
+.notfound-container{
+    height: 100vh;
+    display: flex;
+    background-color:rgba(255, 255, 255, 0.45);
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.btn-not{
+    position: absolute;
+    color:black;
+    background-color:orange;
+    border: none;
+    border-radius: 20px;
+    padding: 7px;
+    transform: translateY(200px);
+}

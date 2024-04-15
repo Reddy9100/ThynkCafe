@@ -1,0 +1,111 @@
+.home-con{
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-image: linear-gradient(to right, white,rgb(209, 161, 161) 100%);
+}
+.ourcollection{
+    animation: collection 2s infinite;
+}
+
+@keyframes collection {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.25)
+    }
+}
+.inner-home{
+    margin: 100px;
+    height: 50vh;
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.coffee-home{
+    height: 400px;
+    width: 450px;
+    background-size: cover;
+    border-radius:10px;
+    border: 2px groove brown;
+   
+}
+.carousel-home{
+    width: 430px;
+    backdrop-filter: blur(20px);
+    filter: drop-shadow(3px 3px 3px black);
+}
+
+.cup{
+    color: brown;
+}
+
+.head-home{
+    color:black;
+    font-weight: 500;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.span-home{
+    color:brown;
+    font-family: cursive;
+    animation: spanhome 2s infinite;
+}
+@keyframes spanhome{
+    from{
+        color: burlywood;
+    }
+    to{
+        color: brown;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home-con {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .inner-home {
+        display: flex;
+        flex-direction: column ;
+        align-items: center;
+        justify-content: space-around;
+        order: 1;
+    }
+    .coffee-home {
+        height: 300px;
+        width: 340px;
+        margin-top: 40px;
+        background-size: cover;
+    }
+    .head-home {
+        font-size: 23px;
+    }
+    .carousel-home {
+        margin-top: 40px;
+        height: 40vh;
+        order: 2; 
+        margin: auto;
+        width: 80%;
+    }
+    .ourcollection{
+        text-align: center;
+        animation: collection 2s infinite;
+    }
+    
+    @keyframes collection {
+        from{
+            transform: scale(0.7);
+        }
+        to{
+            transform: scale(1.0)
+        }
+    }
+}

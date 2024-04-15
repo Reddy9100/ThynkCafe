@@ -1,0 +1,150 @@
+.navbarlogo{
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+    border-radius: 45%;
+    border: 2px dotted chocolate;
+}
+.navbar{
+    height:10vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.innernav{
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.link-for-mobile{
+    font-size: 20px;
+    margin-top: 10px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: transform 0.3s ease-in;
+    color: white;
+    animation: change-nav-color;
+}
+@keyframes change-nav-color{
+    from{
+        transform: scale(1);
+        color: white;
+    }
+    to{
+        transform: scale(1.45);
+        color: aqua;
+    }
+}
+.bars{
+    display: none;
+    
+
+}
+.ul-con{
+    list-style-type: none;
+    display: flex;
+    color: white;
+    font-size: 25px;
+    font-family: monospace;
+    width: 350px;
+    justify-content: space-between;
+    align-items: center;
+}
+.head-nav{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 250px;
+    font-size: 40px;
+    color:transparent;
+    background-image: url("https://media1.giphy.com/media/rsQu1BC0BF8wo/giphy.gif?cid=ecf05e4714pi9lhdo8xbg3lig5ps2m12m31xyv860s0z7tjk&ep=v1_gifs_related&rid=giphy.gif&ct=g");
+    background-size: cover;
+    background-clip:text;
+}
+.ul-connect{
+    display: none;
+}
+.link-for-mobile{
+    display: none;
+}
+.link-ul{
+ display: block;
+ text-decoration: none;
+}
+  
+  .ul-con.mobile-menu-open {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+    background-color: bisque;
+    z-index: 1000;
+    transition: transform 0.3s ease-in;
+  }
+  
+  .link-ul.link-for-mobile {
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: transform 0.6s ease-in;
+    color: black;
+    text-decoration: none;
+  }
+  
+  .link-ul.link-for-mobile:hover {
+    transform: scale(1.1);
+    color:burlywood;
+  }
+  
+  .bars {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+    color: burlywood;
+  }
+
+@media screen and (max-width : 768px) {
+
+    .navbar{
+    width: auto;
+    }
+    .link-ul{
+        display: none;
+    }
+    .ul-con{
+        display: none;
+    }
+    .head-nav{
+        display: none;
+    }
+    .bars{
+        display: block;
+        font-size: 30px;
+        color: burlywood;
+    }
+    .link-for-mobile{
+        display: block;
+    }
+    .bars {
+        display: block;
+      }
+    
+      .ul-connect {
+        display: block;
+        height: 50vh;
+        background-color: bisque;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+      }
+    
+      .link-for-mobile {
+        display: block;
+      }
+    }

@@ -1,0 +1,55 @@
+.coffeecollection{
+    min-height: 100vh;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.filtercoffee{
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    color:white;
+    border-radius: 20px;
+    width: 300px;
+}
+.filtercoffee::placeholder{
+    color:whitesmoke;
+}
+.notfound-con{
+    height: 100vh;
+    display: flex;
+    background-color:rgba(255, 255, 255, 0.45);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner-menu{
+    height: 40vh;
+    width: 100%;
+    background-size: cover;
+}
+.loader{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.loader-image{
+    height: 200px;
+    background-size: cover;
+}
+.head-coffee{
+    text-align: center;
+    padding: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: underline;
+}

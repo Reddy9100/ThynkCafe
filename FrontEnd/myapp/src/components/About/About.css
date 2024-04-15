@@ -1,0 +1,212 @@
+.about-con{
+    min-height: 100vh;
+}
+body{
+    font-family: Roboto slab,serif;
+}
+.baaner{
+    height: 70vh;
+    background-size: cover;
+    width: 100%;
+    padding: 30px;
+}
+.inner-about{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px;
+}
+.desc-about{
+    font-size: 20px;
+}
+.content-div{
+    width: 37%;
+}
+.image-about{
+    height: 300px;
+    width: 350px;
+    background-size: cover;
+}
+.specialities-con{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:80%;
+    margin: auto;
+}
+.text-we{
+    color:white;
+    background-color: black;
+    padding: 5px;
+    animation: weprovide 4s infinite;
+}
+@keyframes weprovide {
+    from{
+        transform:translateY(30px);
+        border-radius: none;
+    }
+    to{
+        transform: translateY(0px);
+        border-radius: 20px;
+    }
+
+}
+    
+.acPremises{
+    background-image: url("https://jpaircon.com/wp-content/uploads/2021/07/restaurant-air-con.jpg");
+    height: 300px;
+    width: 350px;
+    background-size: cover;
+}
+.wifi{
+    background-image: url("https://pivotalcommware.com/wp-content/uploads/2022/08/Cafe_labels_3-1024x581.jpg");
+    height: 300px;
+    width: 350px;
+    background-size: cover;
+}
+.player{
+    border-radius: 10%;
+    filter: drop-shadow(63px 63px 53px burlywood);
+    overflow: hidden;
+}
+.book{
+    background-image: url("https://images.lifestyleasia.com/wp-content/uploads/sites/7/2022/02/04091954/shutterstock_692337445-min-1354x900.jpg");
+    height: 300px;
+    width: 350px;
+    background-size: cover;
+    
+}
+.sponsor{
+    height: 300px;
+    width: 330px;
+    background-size: cover;
+    border-radius: 20px;
+}
+.sponser-con{
+    display:flex ;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(to right , burlywood ,brown 50%);
+    margin: 100px;
+}
+.input-sponser{
+    height: 60px;
+    width: 400px;
+    border: 4px groove white;
+    border-radius: 20px;
+    background-color: burlywood;
+    padding: 4px;
+    color: black;
+    position: relative;
+}
+.input-sponser::placeholder{
+    color: brown;
+    font-family:cursive;
+    margin-right: 5px;
+    
+}
+.btn-submit{
+    position: absolute;
+    margin-top: 28px;
+    transform: translateX(-100px);
+    margin-right: 40px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+.sub-con{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.falsesub{
+    display: none;
+}
+
+@media screen and (max-width : 768px) {
+    html,body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .baaner{
+    height: 30vh;
+    width: 100%;
+    background-size: cover;
+    padding: 0%;
+    }
+.input-sponser{
+    width: auto;
+}
+.inner-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.content-div{
+    width:300px;
+    font-size: 15px;
+}
+.player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 330px;
+    height:350px;
+    overflow: hidden;
+    aspect-ratio: 4/3;
+
+    video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+    }
+}
+.specialities-con{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 5px;
+}
+.image-about{
+    width: 320px;
+    border-radius: 20px;
+}
+.acPremises{
+    width: 320px;
+    border-radius: 20px;
+}
+.wifi{
+    width: 320px;
+    border-radius: 20px;
+}
+.book{
+    width: 320px;
+    border-radius: 20px;
+}
+.sponser-con{
+    height: 50vh;
+    width: 330px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+.sponsor{
+    margin-top: 40px;
+    width: 150px;
+    height: 130px;
+}
+.input-sponser{
+    width: 300px;
+}
+
+}

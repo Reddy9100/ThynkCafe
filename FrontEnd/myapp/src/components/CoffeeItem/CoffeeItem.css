@@ -1,0 +1,100 @@
+.coffeItemcon{
+    margin: 30px;
+}
+.imagecoffee{
+    height: 250px;
+    width: 250px;
+    background-size: cover;
+    backdrop-filter: blur(20px);
+    border-radius:12%;
+    align-self: center;
+}
+.card-coffee{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 350px;
+    border: 3px solid rgb(71, 49, 21);
+    padding: 10px;
+    border-radius: 20px;
+    backdrop-filter: blur(40px);
+    transition: transform 0.5s ease-in-out;
+    filter: drop-shadow(2px 1px 2px brown);
+    position: relative;
+}
+.card-coffee:hover{
+    transform:scale(1.06);
+}
+.coffeename{
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: chocolate;
+    animation: namecoffee 1s infinite;
+}
+@keyframes namecoffee {
+    from{
+        transform: scale(1)
+    }
+    to{
+        transform: scale(1.1);
+        color:crimson;
+    }
+}
+.coffeepara{
+    color: rgb(23, 12, 12);
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+.coffeepara2{
+    color: rgb(23, 12, 12);
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+.coffeepara3{
+    color: rgb(23, 12, 12);
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+.rupee{
+    font-size: 20px;
+    color:rgb(196, 165, 126);
+    background-color: brown;
+    border-radius: 50%;
+    padding: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.position-Of-like{
+    position: relative;
+    transform: translateX(80px);
+    font-size: 30px;
+    color: white;
+    filter: drop-shadow(3px 3px 3px black);
+}
+.liked-coffee{
+    position: relative;
+    transform: translateX(80px);
+    font-size: 30px;
+    color: red;
+    accent-color: red;
+    filter: drop-shadow(3px 3px 3px white);
+    transition: all 0.4s ease-in;
+}
+.liked-coffe:hover{
+    transform: scale(1.05);
+}
+.order-image{
+    height: 250px;
+    width: 100%;
+    border-radius: 30px;
+    background-size: cover;
+    position:relative;
+}
+
+@media screen and (max-width : 768px) {
+    .card-coffee{
+        width: 310px;
+    }
+}

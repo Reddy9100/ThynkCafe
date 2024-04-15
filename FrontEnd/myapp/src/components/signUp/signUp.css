@@ -1,0 +1,151 @@
+.signUp-image{
+    height: 400px;
+    width: 400px;
+    background-size: cover;
+    border-radius: 30px;
+}
+.signup-con{
+    height: 100vh;
+    width: 100%;
+    background-image: url("https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+label{
+    color: black;
+}
+.thynk-head{
+    position:absolute;
+    top: -6.5%;
+    transform: translateX(60px);
+    background-color: white;
+    padding: 2px;
+    border-radius: 20px;
+    border: 3px solid greenyellow;
+    text-align: center;
+}
+.inner-signup{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+.form-con{
+    background-color: transparent;
+    backdrop-filter: blur(4px);
+    border: 3px solid greenyellow;
+    padding: 20px;
+    width: 400px;
+    border-radius: 7px;
+}
+.signup-head{
+    text-align: center;
+    color: blue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 20px;
+}
+.text-feild{
+    border: 3px solid greenyellow
+}
+.text-feild:focus{
+    background-color: black;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.password-feild{
+    border: 3px solid greenyellow;
+}
+.password-feild:focus{
+    position: relative;
+    background-color: black;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.text-feild::placeholder{
+    color: rgb(103, 149, 233);
+}
+.password-feild::placeholder{
+    color: rgb(103, 149, 233);
+}
+.email-feild{
+    border: 3px solid greenyellow
+}
+.email-feild::placeholder{
+    color: rgb(103, 149, 233);
+}
+.eye-icon{
+    font-size: 15px;
+    color:rgb(212, 15, 32);
+    position: absolute;
+    top: 65%;
+    transform: translateX(320px);
+    cursor: pointer;
+}
+.email-feild:focus{
+    background-color: black;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.para-signup{
+    color: rgb(18, 6, 6);
+    font-family: Arial, Helvetica, sans-serif
+}
+.span{
+    color: red;
+    animation: pulse 5s infinite;
+    border: 3px solid rgb(76, 171, 235);
+    padding: 7px;
+    border-radius: 5px;
+    font-variant: small-caps;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+@keyframes pulse{
+    0%{
+        transform: scale(1);
+        color: black;
+        background-color: white;
+    }
+    50%{
+        transform: scale(1.5);
+        color:white;
+        background-color: black;
+    }
+    100%{
+        transform: scale(1);
+        color: black;
+        background-color: white;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .signup-con{
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .signUp-image{
+        display: none;
+    }
+    .eye-icon{
+        transform: translateX(220px);
+        color: red;
+    }
+    html,body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .thynk-head{
+        transform: translateX(25px);
+    }
+}
